@@ -1,0 +1,90 @@
+.nav {
+  height: 72px;
+  // background-color: #848fb8;
+  width: 80%;
+  margin: 0;
+  position: fixed;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 0 0;
+  z-index: 100;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%, 0);
+
+  &__logo-container {
+    display: flex;
+    height: 100%;
+    background-color: #d5d5d5;
+    padding: 0 32px;
+    align-items: center;
+    color: #fff;
+    transition: 0.4s;
+    justify-content: center;
+    &:hover {
+      background-color: green;
+    }
+  }
+  &__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__burger-icon {
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    //display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    align-items: unset;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+
+  &__link {
+    margin: 0 0.83333rem;
+
+    a {
+      color: #000000;
+      transition: 0.3s;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  &-mobile {
+    display: none;
+  }
+}
+
+.searchbox {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  width: 500px;
+  pointer-events: none;
+  z-index: 50;
+  //opacity: 0;
+  transition: 0.4s;
+  display: none;
+
+  & input {
+    height: 48px;
+    width: 100%;
+  }
+
+  & form {
+    display: flex;
+  }
+}

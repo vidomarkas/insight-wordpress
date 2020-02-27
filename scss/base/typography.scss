@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400|Source+Serif+Pro&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+}
+
+.heading {
+  font-family: "Source Serif Pro", serif;
+  color: #424242;
+  font-weight: 400;
+
+  &__primary {
+    font-size: 61px;
+    line-height: 73px;
+    margin-bottom: 0;
+  }
+
+  &__secondary {
+    font-size: 41px;
+    line-height: 50px;
+    margin-top: 0;
+  }
+  &__tertiary {
+    font-size: 20px;
+    line-height: 33px;
+    margin-top: 0;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+}
+
+.homepage-card__heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: #7971bd;
+  margin: 10px 0;
+}
+
+.homepage-card__text {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #424242;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}

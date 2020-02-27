@@ -1,0 +1,28 @@
+//  Theme Name: Victory
+// Author: Viktoras Domarkas
+// Author URI: https://vidomarkas.com
+// Description: The official Victory theme
+// Version: 1.0
+
+@import "normalize/normalize";
+
+@import "abstracts/functions";
+
+@import "abstracts/mixins";
+
+@import "abstracts/variables";
+
+@import "base/base";
+
+@import "base/animations";
+
+@import "base/typography";
+
+@import "base/utilities";
+
+@import "components/homepage-card";
+
+
+@import "layout/header";
+
+@import "layout/front-page";

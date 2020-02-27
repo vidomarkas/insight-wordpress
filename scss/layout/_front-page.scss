@@ -1,0 +1,129 @@
+.homepage-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("img/homepage-header.jpg");
+  background-size: cover;
+  //background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #fff;
+}
+
+.homepage-intro {
+  background: linear-gradient(90deg, #7971bd 0%, #8078c0 100%);
+  padding: 4.5rem 0 5rem 0;
+  &__text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    width: 75%;
+    max-width: 1480px;
+    margin: auto;
+    line-height: 42px;
+  }
+}
+
+.homepage-services {
+  padding: 80px 0;
+}
+
+.homepage-cas {
+  padding: 80px 0;
+  &__container {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__layout-item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      width: 90%;
+    }
+  }
+}
+
+.homepage-tabmenu {
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 40px auto 0 auto;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid #bfbfbf;
+  }
+
+  &__item {
+    padding: 6px 0;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 20px;
+
+    & a {
+      border-bottom: 3px solid transparent;
+      transition: all 0.4s linear;
+      color: #424242;
+
+      &.curent {
+        color: #7971bd;
+        border-bottom-color: #7971bd;
+      }
+    }
+
+    & a:hover {
+      color: #7971bd;
+      border-bottom: 3px solid #7971bd;
+    }
+  }
+
+  &__item:nth-child(2) {
+    border-left: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+  }
+}
+
+.cas-detail {
+  display: none;
+  opacity: 0;
+  width: 80%;
+  margin: 0 auto;
+
+  &__heading {
+    text-align: center;
+    font-family: "Source Serif Pro", serif;
+    color: #424242;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 51px;
+    margin-top: 20px;
+
+    &__container {
+      width: 40%;
+    }
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #424242;
+    &__container {
+      width: 40%;
+    }
+  }
+}
+
+.cas-detail.is-visible {
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+}
