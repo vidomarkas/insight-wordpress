@@ -50,6 +50,15 @@ body {
   color: #424242;
 }
 
+.homepage-card__btn {
+  color: #7971bd;
+  font-size: 20px;
+  line-height: 30px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .text-left {
   text-align: left;
 }

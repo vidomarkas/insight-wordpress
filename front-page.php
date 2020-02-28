@@ -41,7 +41,7 @@
                     <p class="homepage-card__text">Get into your consumer’s map of the world for a full understanding of
                         their wants, unmet needs and barriers to choosing you.</p>
                     <p>
-                        <a href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a class="homepage-card__btn" href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
                     </p>
                 </div>
 
@@ -56,7 +56,7 @@
                     <p class="homepage-card__text">Use your consumers’ ingenuity – work with them to create, optimise
                         and test concepts and products they will really want.</p>
                     <p>
-                        <a href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a class="homepage-card__btn" href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
                     </p>
                 </div>
 
@@ -70,7 +70,7 @@
                     <p class="homepage-card__text">Develop and communicate ideas and propositions that will make
                         consumers fall in love with your offer.</p>
                     <p>
-                        <a href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a class="homepage-card__btn" href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
                     </p>
                 </div>
 
@@ -84,7 +84,7 @@
                     <p class="homepage-card__text">Make sure the physical or online retail experience is optimised. Use
                         the crowd to help design, assess and refine the ideal launch and path to purchase.</p>
                     <p>
-                        <a href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a class="homepage-card__btn" href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
                     </p>
                 </div>
 
@@ -179,82 +179,56 @@
             </div>
         </div>
     </section>
+    <section class="homepage-services">
+        <header class="homepage-services__header">
+            <h2 class="heading heading__secondary underline underline--purple">Explore our success stories</h2>
 
-
-    <div class="container">
-
-
-
-        <a href="blogslist.html">
-            <h2 class="section-heading">All blogs</h2>
-        </a>
-        <section>
-
+        </header>
+        <div class="projects-container">
             <?php
-        
-            $args = array('post_type'=> 'post',
-            'posts_per_page' => 2);
-            
-            $blogposts = new WP_Query($args);
-
-            while($blogposts-> have_posts()){
-                $blogposts-> the_post();
-            
-        
-        ?>
-
-            <div class="card">
-                <div class="card-image">
-                    <a href="<?php  the_permalink();?>"><img
-                            src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>" alt="img1" /></a>
-                    <div class="card-description">
-                        <a href="<?php  the_permalink();?>">
-                            <h3><?php  the_title();?></h3>
-                        </a>
-                        <p><?php echo wp_trim_words(get_the_excerpt(), 30) ;?></p>
-                        <a href="<?php  the_permalink();?>" class="btn-readmore">Read more</a>
-                    </div>
-                </div>
-            </div>
-
-            <?php } wp_reset_query(); ?>
-
-        </section>
-        <a href="#">
-            <h2 class="section-heading">All projects</h2>
-        </a>
-        <section>
-
-            <?php
-        
         $args = array('post_type'=> 'project',
         'posts_per_page' => 2);
-        
         $projects = new WP_Query($args);
-
         while($projects-> have_posts()){
             $projects-> the_post();
-        
-    
     ?>
-            <div class="card">
-                <div class="card-image">
-                    <a href="<?php  the_permalink();?>"><img
-                            src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>" alt="img1" /></a>
-                    <div class="card-description">
-                        <a href="<?php  the_permalink();?>">
-                            <h3><?php  the_title();?></h3>
-                        </a>
-                        <p><?php echo wp_trim_words(get_the_excerpt(), 30) ;?></p>
-                        <a href="<?php  the_permalink();?>" class="btn-readmore">Read more</a>
+
+            <div class="project">
+
+                <h4 class="project__title"><?php the_title();?></h4>
+                <a href="<?php  the_permalink();?>">
+                    <div class="project__background"
+                        style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID());?>')">
+
+                        <div class="overlay">
+                            <p><?php echo wp_trim_words(get_the_excerpt(), 30) ;?></p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+
+
 
             <?php } wp_reset_query(); ?>
 
-        </section>
+        </div>
+        <div class="testimonial">
+            <i class="fas fa-quote-right testimonial__icon"></i>
+            <p class="testimonial__text">“Catalyx has established a contemporary way to evaluate all of the information
+                at its fingertips which
+                gives us hope for the future. In a world where data is proliferating at an astonishing rate, there will
+                be ways to address issues posed by this sheer volume of data thanks to emerging talents like Catalyx ”
+            </p>
+            <br>
+            <p class="testimonial__author">MRS Judging Panel</p>
 
-    </div>
+        </div>
+    </section>
+
+
+
+
+
+
 </main>
 <?php get_footer();?>
