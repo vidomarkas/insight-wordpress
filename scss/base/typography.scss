@@ -16,12 +16,23 @@ body {
     font-size: 61px;
     line-height: 73px;
     margin-bottom: 0;
+
+    &--services {
+      font-size: 43px;
+      line-height: 58px;
+    }
   }
 
   &__secondary {
     font-size: 41px;
     line-height: 50px;
     margin-top: 0;
+    &--services {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 300;
+    }
   }
   &__tertiary {
     font-size: 20px;

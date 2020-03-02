@@ -16,7 +16,7 @@
             <li><a <?php if(get_post_type() == 'post') echo 'class="active"' ?>
                     href="<?php echo site_url('/blog');?>">Blog</a></li>
             <li><a <?php if(get_post_type() == 'project') echo 'class="active"' ?>
-                    href="<?php echo site_url('/projects');?>">News & Views</a></li>
+                    href="<?php echo site_url('/news');?>">News & Views</a></li>
             <li><a <?php if(is_page('about') ) echo 'class="active"' ?>
                     href="<?php echo site_url('/about');?>">About</a></li>
             <li><a <?php if(is_page('contact') ) echo 'class="active"' ?>
@@ -29,15 +29,17 @@
 
     <nav class="nav">
         <div class="nav__logo-container"><a href="<?php echo site_url();?>"><img class="nav__logo"
-                    src="<?php echo get_template_directory_uri(); ?>/img/spa.png" alt="logo" /></a></div>
+                    src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo" /></a></div>
 
         <ul class="nav__links">
             <li class="nav__link"><a <?php if(is_front_page()) echo 'class="active"' ?>
                     href="<?php echo site_url();?>">Home</a></li>
-            <li class="nav__link"><a <?php if(get_post_type() == 'post') echo 'class="active"' ?>
-                    href="<?php echo site_url('/blog');?>">News & Views</a></li>
+            <li class="nav__link"><a <?php if(is_page('services')) echo 'class="active"' ?>
+                    href="<?php echo site_url('/services');?>">Services</a></li>
+            <li class="nav__link"><a <?php if(is_page('news')) echo 'class="active"' ?>
+                    href="<?php echo site_url('/news');?>">News & Views</a></li>
             <li class="nav__link"><a <?php if(get_post_type() == 'project') echo 'class="active"' ?>
-                    href="<?php echo site_url('/projects');?>">Projects</a></li>
+                    href="<?php echo site_url('/projects');?>">Success stories</a></li>
             <li class="nav__link"><a <?php if(is_page('about')) echo 'class="active"' ?>
                     href="<?php echo site_url('/about');?>">About</a>
             </li>
