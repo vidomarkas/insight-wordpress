@@ -35,7 +35,7 @@ console.log(" pathname => " + window.location.pathname);
 console.log(" hashpathname => " + window.location.hash);
 console.log(" search=> " + window.location.search);
 
-if (window.location.pathname === "/") {
+if (window.location.pathname === "/wordpress/") {
   const drivesKeyInsights = document.getElementById("drives-key-insights");
   const realTimeAccess = document.getElementById("real-time-access");
   const tailoredVisualReports = document.getElementById(
@@ -73,22 +73,67 @@ if (window.location.pathname === "/") {
 
 // Sticky nav in /services
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-  myFunction();
-};
+if (window.location.pathname === "/wordpress/services/") {
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {
+    myFunction();
+  };
 
-// Get the navbar
-const servicesNav = document.getElementById("services-nav");
+  // Get the navbar
+  const servicesNav = document.getElementById("services-nav");
 
-// Get the offset position of the navbar
-const sticky = servicesNav.offsetTop;
+  // Get the offset position of the navbar
+  const sticky = servicesNav.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    servicesNav.classList.add("sticky-nav");
-  } else {
-    servicesNav.classList.remove("sticky-nav");
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      servicesNav.classList.add("sticky-nav");
+    } else {
+      servicesNav.classList.remove("sticky-nav");
+    }
   }
 }
+
+//   // Bind click handler to menu items
+//   // so we can get a fancy scroll animation
+//   menuItems.click(function(e) {
+//     var href = $(this).attr("href"),
+//       offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+//     $("html, body")
+//       .stop()
+//       .animate(
+//         {
+//           scrollTop: offsetTop
+//         },
+//         850
+//       );
+//     e.preventDefault();
+//   });
+// }
+
+// // Bind to scroll
+// $(window).scroll(function() {
+//   // Get container scroll position
+//   var fromTop = $(this).scrollTop() + topMenuHeight;
+
+//   // Get id of current scroll item
+//   var cur = scrollItems.map(function() {
+//     if ($(this).offset().top < fromTop) return this;
+//   });
+//   // Get the id of the current element
+//   cur = cur[cur.length - 1];
+//   var id = cur && cur.length ? cur[0].id : "";
+
+//   if (lastId !== id) {
+//     lastId = id;
+//     // Set/remove active class
+//     menuItems
+//       .parent()
+//       .removeClass("active")
+//       .end()
+//       .filter("[href=#" + id + "]")
+//       .parent()
+//       .addClass("active");
+//   }
+// });
