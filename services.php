@@ -14,15 +14,20 @@
     </div>
     <div id="services-nav" class="services-navigation">
         <ul class="services-navigation__list">
-            <li class="services-navigation__item"><a href="#insight-discovery" class="curent">Insight discovery</a></li>
-            <li class="services-navigation__item"><a href="#innovation-development">Innovation development</a></li>
-            <li class="services-navigation__item"><a href="#communication-development">Communication development</a>
+            <li class="services-navigation__item activeSection"><a href="#insight-discovery"
+                    class="services-navigation__item__link">Insight
+                    discovery</a></li>
+            <li class="services-navigation__item"><a href="#innovation-development"
+                    class="services-navigation__item__link">Innovation development</a></li>
+            <li class="services-navigation__item"><a href="#communication-development"
+                    class="services-navigation__item__link">Communication development</a>
             </li>
-            <li class="services-navigation__item"><a href="#commercial-optimisation">Commercial Optimisation</a></li>
+            <li class="services-navigation__item"><a href="#commercial-optimisation"
+                    class="services-navigation__item__link">Commercial Optimisation</a></li>
         </ul>
     </div>
     <div class="services-section__container">
-        <section class="services-section" id="insight-discovery">
+        <section class="services-section " id="insight-discovery">
             <div class="services-section__wrapper">
                 <div class="services-text__wrapper">
                     <h3 class="services__heading--purple">Insight discovery</h3>

@@ -77,17 +77,28 @@ if (window.location.pathname === "/wordpress/services/") {
   // When the user scrolls the page, execute myFunction
   window.onscroll = function() {
     myFunction();
+    changeActiveSection();
   };
 
   // Get the navbar
   const servicesNav = document.getElementById("services-nav");
+  // Get div containing the sections
+  const servicesSection = document.querySelector(
+    ".services-section__container"
+  );
 
   // Get the offset position of the navbar
   const sticky = servicesNav.offsetTop;
+  // Calculate the end of the sections
+  servicesSection.offsetBottom =
+    servicesSection.offsetTop + servicesSection.offsetHeight;
 
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
-    if (window.pageYOffset >= sticky) {
+    if (
+      window.pageYOffset >= sticky &&
+      window.pageYOffset <= servicesSection.offsetBottom
+    ) {
       servicesNav.classList.add("sticky-nav");
     } else {
       servicesNav.classList.remove("sticky-nav");
@@ -95,45 +106,27 @@ if (window.location.pathname === "/wordpress/services/") {
   }
 }
 
-//   // Bind click handler to menu items
-//   // so we can get a fancy scroll animation
-//   menuItems.click(function(e) {
-//     var href = $(this).attr("href"),
-//       offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-//     $("html, body")
-//       .stop()
-//       .animate(
-//         {
-//           scrollTop: offsetTop
-//         },
-//         850
-//       );
-//     e.preventDefault();
-//   });
-// }
+var section = document.querySelectorAll(".services-section");
+var sections = {};
+var i = 0;
 
-// // Bind to scroll
-// $(window).scroll(function() {
-//   // Get container scroll position
-//   var fromTop = $(this).scrollTop() + topMenuHeight;
+Array.prototype.forEach.call(section, function(e) {
+  sections[e.id] = e.offsetTop;
+  console.log(sections);
+});
 
-//   // Get id of current scroll item
-//   var cur = scrollItems.map(function() {
-//     if ($(this).offset().top < fromTop) return this;
-//   });
-//   // Get the id of the current element
-//   cur = cur[cur.length - 1];
-//   var id = cur && cur.length ? cur[0].id : "";
+function changeActiveSection() {
+  var scrollPosition =
+    document.documentElement.scrollTop || document.body.scrollTop;
 
-//   if (lastId !== id) {
-//     lastId = id;
-//     // Set/remove active class
-//     menuItems
-//       .parent()
-//       .removeClass("active")
-//       .end()
-//       .filter("[href=#" + id + "]")
-//       .parent()
-//       .addClass("active");
-//   }
-// });
+  for (i in sections) {
+    if (sections[i] <= scrollPosition + 100) {
+      document
+        .querySelector(".activeSection")
+        .setAttribute("class", "services-navigation__item__link");
+      document
+        .querySelector("a[href*=" + i + "]")
+        .setAttribute("class", "services-navigation__item__link activeSection");
+    }
+  }
+}

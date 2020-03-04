@@ -707,14 +707,14 @@ body {
     .services-navigation__item::not(:first-child):not(:last-child) {
       border-left: 1px solid #bfbfbf;
       border-right: 1px solid #bfbfbf; }
-    .services-navigation__item a {
+    .services-navigation__item__link {
       border-bottom: 3px solid transparent;
       padding: 6px 20px;
       transition: all 0.1s linear;
       color: #424242; }
-      .services-navigation__item a.curent {
-        color: #7971bd;
-        border-bottom-color: #7971bd; }
+      .services-navigation__item__link.activeSection {
+        color: #7971bd !important;
+        border-bottom: 6px solid #7971bd !important; }
     .services-navigation__item a:hover {
       color: #7971bd;
       border-bottom: 6px solid #7971bd; }
