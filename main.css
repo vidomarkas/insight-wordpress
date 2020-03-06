@@ -340,25 +340,6 @@ footer #social-media-footer a img {
   color: #333;
 }
 
-/* Pagination */
-.pagination {
-  padding: 8px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.pagination a {
-  border-top: 3px solid #fff;
-  display: inline-block;
-  padding: 8px 16px;
-  transition: 0.4s;
-  color: #000;
-}
-
-.pagination a:hover {
-  border-top: 3px solid black;
-}
-
 /* Single blogpost */
 #post-container {
   display: flex;

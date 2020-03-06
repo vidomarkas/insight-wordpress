@@ -112,7 +112,6 @@ var i = 0;
 
 Array.prototype.forEach.call(section, function(e) {
   sections[e.id] = e.offsetTop;
-  console.log(sections);
 });
 
 function changeActiveSection() {

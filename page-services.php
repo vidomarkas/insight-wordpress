@@ -5,13 +5,13 @@
 
 
 <main class="services">
-    <div class="services-header">
+    <header class="services-header">
         <h1 class="heading heading__primary--services">We help you to build stronger brands<br>
             that beat consumer expectations again and again...</h1>
         <h3 class="heading heading__secondary--services">...by embedding consumers deep into your innovation and
             creative
             development processes.</h3>
-    </div>
+    </header>
     <div id="services-nav" class="services-navigation">
         <ul class="services-navigation__list">
             <li class="services-navigation__item activeSection"><a href="#insight-discovery"

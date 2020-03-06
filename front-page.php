@@ -41,7 +41,8 @@
                     <p class="homepage-card__text">Get into your consumer’s map of the world for a full understanding of
                         their wants, unmet needs and barriers to choosing you.</p>
                     <p>
-                        <a class="homepage-card__btn" href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a class="homepage-card__btn" href="<?php echo site_url();?>/services">Learn
+                            more <i class="fas fa-arrow-right"></i></a>
                     </p>
                 </div>
 
@@ -56,7 +57,8 @@
                     <p class="homepage-card__text">Use your consumers’ ingenuity – work with them to create, optimise
                         and test concepts and products they will really want.</p>
                     <p>
-                        <a class="homepage-card__btn" href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a class="homepage-card__btn" href="<?php echo site_url();?>/services">Learn more <i
+                                class="fas fa-arrow-right"></i></a>
                     </p>
                 </div>
 
@@ -70,7 +72,8 @@
                     <p class="homepage-card__text">Develop and communicate ideas and propositions that will make
                         consumers fall in love with your offer.</p>
                     <p>
-                        <a class="homepage-card__btn" href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a class="homepage-card__btn" href="<?php echo site_url();?>/services">Learn more <i
+                                class="fas fa-arrow-right"></i></a>
                     </p>
                 </div>
 
@@ -84,7 +87,8 @@
                     <p class="homepage-card__text">Make sure the physical or online retail experience is optimised. Use
                         the crowd to help design, assess and refine the ideal launch and path to purchase.</p>
                     <p>
-                        <a class="homepage-card__btn" href="/services">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a class="homepage-card__btn" href="<?php echo site_url();?>/services">Learn more <i
+                                class="fas fa-arrow-right"></i></a>
                     </p>
                 </div>
 

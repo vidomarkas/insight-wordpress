@@ -2,42 +2,48 @@
 
 
 
-<main>
-    <div class="container">
+<main class="success-stories__container">
 
-        <h2 class="page-heading">All projects</h2>
 
-        <section>
 
-            <?php
-        while( have_posts()){
-            the_post();
+    <header>
+        <h2 class="heading heading__secondary underline underline--purple">Success stories</h2>
+    </header>
+
+
+
+    <div class="projects-container__success-stories">
+        <?php
+        $args = array('post_type'=> 'project');
+        $projects = new WP_Query($args);
+        while($projects-> have_posts()){
+           
+            $projects-> the_post();
     ?>
 
-            <div class="card">
-                <div class="card-image">
-                    <a href="<?php  the_permalink();?>"><img
-                            src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>" alt="img1" /></a>
-                    <div class="card-description">
-                        <a href="<?php  the_permalink();?>">
-                            <h3><?php  the_title();?></h3>
-                        </a>
-                        <div class="card-meta">
-                            Posted by <?php the_author();?> on <?php the_time('F j, Y');?>
-                        </div>
+        <div class="project project__success-stories">
+
+            <h4 class="project__title"><?php the_title();?></h4>
+            <a href="<?php  the_permalink();?>">
+                <div class="project__background"
+                    style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID());?>')">
+
+                    <div class="overlay">
                         <p><?php echo wp_trim_words(get_the_excerpt(), 30) ;?></p>
-                        <a href="<?php  the_permalink();?>" class="btn-readmore">Read more</a>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-            <?php } wp_reset_query(); ?>
 
-        </section>
+        <?php } wp_reset_query(); ?>
 
-        <div class="pagination">
-            <?php echo paginate_links(); ?></div>
 
     </div>
+
+    <div class="success-stories__pagination">
+        <?php echo paginate_links(); ?></div>
+
+
 </main>
 <?php get_footer();?>
