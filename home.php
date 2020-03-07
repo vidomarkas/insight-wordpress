@@ -21,25 +21,30 @@
         <?php query_posts( array()); ?>
 
         <?php if( have_posts() ): while ( have_posts() ) : the_post(); ?>
-        <div class="blog__post">
+        <a class="blog__post__link" href="<?php echo get_permalink(); ?>">
+            <div class="blog__post">
 
-            <?php if(has_post_thumbnail()){ ?>
-            <div class="blog__post__image__wrapper"
-                style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID());?>')">
+                <?php if(has_post_thumbnail()){ ?>
+                <div class="blog__post__image__wrapper"
+                    style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID());?>')">
 
+                </div>
+                <?php }?>
+                <div class="blog__post__details">
+
+                    <h2 class="blog__post__title"><?php the_title(); ?></h2>
+                    <div class="blog__post__excerpt">
+                        <?php the_excerpt();?>
+                    </div>
+                </div>
             </div>
-            <?php }?>
-            <h2 class="blog__post__title"><?php the_title(); ?></h2>
-            <div class="blog__post__excerpt">
-                <?php the_excerpt();?>
-            </div>
-        </div>
-        <hr>
+        </a>
+
         <?php endwhile; ?>
 
         <?php else : ?>
 
-        <p><?php __('No News'); ?></p>
+        <p><?php echo ('No News'); ?></p>
 
         <?php endif; ?>
     </div>
