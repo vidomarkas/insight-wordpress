@@ -1,0 +1,53 @@
+.about {
+  &__header {
+    background-color: #edf6fa;
+    height: 90vh;
+
+    &__person {
+      z-index: 1;
+      position: relative;
+      &:after {
+        right: 100%;
+        background-image: url(./img/intro-with-people__blurry--left.jpg);
+        content: "";
+        position: absolute;
+        top: 6%;
+        height: 80%;
+        width: 100%;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+      &--right:after {
+        left: 100%;
+        background-image: url(./img/intro-with-people__blurry--right.jpg);
+        content: "";
+        position: absolute;
+        top: 6%;
+        height: 80%;
+        width: 100%;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-around;
+      max-width: 73%;
+      margin: 0 auto;
+      padding-top: 180px;
+    }
+
+    &__text {
+      align-self: flex-start;
+      padding-top: 52px;
+
+      & .heading__primary--about {
+        font-size: 39px;
+        line-height: 51px;
+      }
+    }
+  }
+}

@@ -674,6 +674,47 @@ body {
     line-height: 29px;
     font-weight: 300; }
 
+.about__header {
+  background-color: #edf6fa;
+  height: 90vh; }
+  .about__header__person {
+    z-index: 1;
+    position: relative; }
+    .about__header__person:after {
+      right: 100%;
+      background-image: url(./img/intro-with-people__blurry--left.jpg);
+      content: "";
+      position: absolute;
+      top: 6%;
+      height: 80%;
+      width: 100%;
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat; }
+    .about__header__person--right:after {
+      left: 100%;
+      background-image: url(./img/intro-with-people__blurry--right.jpg);
+      content: "";
+      position: absolute;
+      top: 6%;
+      height: 80%;
+      width: 100%;
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat; }
+  .about__header__container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 73%;
+    margin: 0 auto;
+    padding-top: 180px; }
+  .about__header__text {
+    align-self: flex-start;
+    padding-top: 52px; }
+    .about__header__text .heading__primary--about {
+      font-size: 39px;
+      line-height: 51px; }
+
 .services {
   background-color: #edf6fa; }
 
