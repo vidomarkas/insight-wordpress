@@ -49,6 +49,9 @@ body {
   line-height: 42px;
   color: #7971bd;
   margin: 10px 0;
+  &--black {
+    color: #424242;
+  }
 }
 
 .homepage-card__text {

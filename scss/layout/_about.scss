@@ -1,4 +1,6 @@
 .about {
+  margin: 150px auto;
+  width: 80%;
   &__header {
     background-color: #edf6fa;
     height: 90vh;
@@ -50,4 +52,88 @@
       }
     }
   }
+
+  &-grid {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+
+    &__item {
+      position: relative;
+      &--quote {
+        grid-column: 2 / span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 2px solid blue;
+        padding: 40px;
+      }
+    }
+  }
+
+  &-card {
+    perspective: 1500px;
+    position: relative;
+    height: 420px;
+
+    &__side {
+      height: 420px;
+      transition: all 0.8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+
+      &--front {
+        background-color: #fff;
+      }
+      &--back {
+        transform: rotateY(-180deg);
+        background-color: #fff;
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+      transform: rotateY(0deg);
+    }
+
+    &__image {
+      height: 420px;
+      width: 100%;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__name {
+      position: absolute;
+      bottom: 30px;
+      left: 10px;
+      color: #fff;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.89);
+    }
+
+    &__job-title {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      color: #fff;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.89);
+    }
+  }
+}
+
+.heading__primary--about {
+  font-size: 39px;
+  line-height: 51px;
 }

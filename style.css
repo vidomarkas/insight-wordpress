@@ -359,6 +359,8 @@ body {
   line-height: 42px;
   color: #7971bd;
   margin: 10px 0; }
+  .homepage-card__heading--black {
+    color: #424242; }
 
 .homepage-card__text {
   font-family: "Source Serif Pro", serif;
@@ -674,46 +676,109 @@ body {
     line-height: 29px;
     font-weight: 300; }
 
-.about__header {
-  background-color: #edf6fa;
-  height: 90vh; }
-  .about__header__person {
-    z-index: 1;
-    position: relative; }
-    .about__header__person:after {
-      right: 100%;
-      background-image: url(./img/intro-with-people__blurry--left.jpg);
-      content: "";
+.about {
+  margin: 150px auto;
+  width: 80%; }
+  .about__header {
+    background-color: #edf6fa;
+    height: 90vh; }
+    .about__header__person {
+      z-index: 1;
+      position: relative; }
+      .about__header__person:after {
+        right: 100%;
+        background-image: url(./img/intro-with-people__blurry--left.jpg);
+        content: "";
+        position: absolute;
+        top: 6%;
+        height: 80%;
+        width: 100%;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat; }
+      .about__header__person--right:after {
+        left: 100%;
+        background-image: url(./img/intro-with-people__blurry--right.jpg);
+        content: "";
+        position: absolute;
+        top: 6%;
+        height: 80%;
+        width: 100%;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat; }
+    .about__header__container {
+      display: flex;
+      justify-content: space-around;
+      max-width: 73%;
+      margin: 0 auto;
+      padding-top: 180px; }
+    .about__header__text {
+      align-self: flex-start;
+      padding-top: 52px; }
+      .about__header__text .heading__primary--about {
+        font-size: 39px;
+        line-height: 51px; }
+  .about-grid {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px; }
+    .about-grid__item {
+      position: relative; }
+      .about-grid__item--quote {
+        grid-column: 2 / span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px; }
+  .about-card {
+    perspective: 1500px;
+    position: relative;
+    height: 420px; }
+    .about-card__side {
+      height: 420px;
+      transition: all 0.8s ease;
       position: absolute;
-      top: 6%;
-      height: 80%;
+      top: 0;
+      left: 0;
       width: 100%;
-      background-size: contain;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .about-card__side--front {
+        background-color: #fff; }
+      .about-card__side--back {
+        transform: rotateY(-180deg);
+        background-color: #fff; }
+    .about-card:hover .about-card__side--front {
+      transform: rotateY(180deg); }
+    .about-card:hover .about-card__side--back {
+      transform: rotateY(0deg); }
+    .about-card__image {
+      height: 420px;
+      width: 100%;
       background-position: center top;
-      background-repeat: no-repeat; }
-    .about__header__person--right:after {
-      left: 100%;
-      background-image: url(./img/intro-with-people__blurry--right.jpg);
-      content: "";
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .about-card__name {
       position: absolute;
-      top: 6%;
-      height: 80%;
-      width: 100%;
-      background-size: contain;
-      background-position: center top;
-      background-repeat: no-repeat; }
-  .about__header__container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 73%;
-    margin: 0 auto;
-    padding-top: 180px; }
-  .about__header__text {
-    align-self: flex-start;
-    padding-top: 52px; }
-    .about__header__text .heading__primary--about {
-      font-size: 39px;
-      line-height: 51px; }
+      bottom: 30px;
+      left: 10px;
+      color: #fff;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.89); }
+    .about-card__job-title {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      color: #fff;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.89); }
+
+.heading__primary--about {
+  font-size: 39px;
+  line-height: 51px; }
 
 .services {
   background-color: #edf6fa; }
