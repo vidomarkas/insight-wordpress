@@ -28,7 +28,7 @@
                 <h3 class="about-card__name">Harry Gibson</h3>
                 <p class="about-card__job-title">Founder / Global digital director</p>
             </div>
-            <div class="about-card__side about-card__side--back">
+            <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
 
                     <p>Harry is passionate about web development, has an appetite for luncheon meats and makes smart
@@ -55,7 +55,7 @@
                 <h3 class="about-card__name">Lily Day</h3>
                 <p class="about-card__job-title">Marketing and PR manager</p>
             </div>
-            <div class="about-card__side about-card__side--back">
+            <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
 
                     <p>Lover of a good meme, Lily fancies both design and front-end development. She is an avid
@@ -74,7 +74,7 @@
                 <h3 class="about-card__name">Sophia Charlton</h3>
                 <p class="about-card__job-title">Account manager</p>
             </div>
-            <div class="about-card__side about-card__side--back">
+            <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
                     <p>Sophia has a serious design crush but a business brain, so she's naturally found a home at
                         Impulse flexing her management muscle and keeping the creatives in line. She likes to taunt the
@@ -92,7 +92,7 @@
                 <h3 class="about-card__name">Alex Rahman</h3>
                 <p class="about-card__job-title">Project Manager</p>
             </div>
-            <div class="about-card__side about-card__side--back">
+            <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
                     <p>Alex has a healthy obsession with all things digital, strongly believing in the intersection of
                         design and technology. Constantly exploring and prototyping new ideas, he'll jump at the chance
@@ -112,7 +112,7 @@
                 <h3 class="about-card__name">Ashley Christensen</h3>
                 <p class="about-card__job-title">Web & Mobile Developer</p>
             </div>
-            <div class="about-card__side about-card__side--back">
+            <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
                     <p>Ashley writes and writes. She also makes stuff out of yarn, paper, fabric, clay, electronics, old
                         boxes and whatever else she can get her hands on. You'll usually find her gardening, gaming,
@@ -129,7 +129,7 @@
                 <h3 class="about-card__name">James Forster</h3>
                 <p class="about-card__job-title">Fullstack developer</p>
             </div>
-            <div class="about-card__side about-card__side--back">
+            <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
                     <p>James is a compulsive tinkerer with technology. He susceptible to long hiccups and when he's not
                         fishing quadcopters out of a tree he can be found building contraptions with his kids.</p>
@@ -149,7 +149,7 @@
                 <h3 class="about-card__name">Dominic Dean</h3>
                 <p class="about-card__job-title">Technical SEO manager</p>
             </div>
-            <div class="about-card__side about-card__side--back">
+            <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
                     <p>Dominic helps our clients achieve their brand vision in the digital space through strategic
                         advice and streamlined project management. He also helps fellow musicians achieve their band
@@ -157,6 +157,43 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="about__summary">
+        <p>What we do</p>
+        <ul>
+            <li>World-class digital </li>
+            <li> Expect creativity</li>
+            <li> Hustle</li>
+            <li>Obsess over details</li>
+            <li> Value relationships</li>
+            <li> High-five</li>
+            <li> Make things, break things</li>
+            <li> Meme</li>
+            <li> Exceed expectations</li>
+            <li>Party</li>
+        </ul>
+        <p>What we don't</p>
+        <ul>
+            <li>Work late / weekends </li>
+
+
+
+
+
+
+
+
+
+            <li> Have a sales team</li>
+            <li> Resist cake</li>
+            <li> Sacrifice quality for profit</li>
+            <li> Fax</li>
+            <li> Lose at Mario Kart</li>
+            <li> Work for free</li>
+            <li> Egos</li>
+            <li> Impossible deadlines</li>
+            <li> Outsource</li>
+        </ul>
     </div>
 
 </main>
