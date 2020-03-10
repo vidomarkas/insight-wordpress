@@ -77,6 +77,30 @@
     position: relative;
     height: 420px;
 
+    &__details {
+      padding: 40px;
+      text-align: center;
+
+      &__emoji {
+        width: 100px;
+        height: 100px;
+      }
+
+      &__social-icons {
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+        }
+        img {
+          height: 30px;
+          width: 30px;
+          margin: 10px;
+        }
+      }
+    }
+
     &__side {
       height: 420px;
       transition: all 0.8s ease;
@@ -132,6 +156,21 @@
       left: 10px;
       color: #fff;
       text-shadow: 2px 2px rgba(0, 0, 0, 0.89);
+    }
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+      font-size: 40px;
+      font-weight: 600;
+      font-family: "Source Serif Pro", serif;
+    }
+    ul {
+      padding: 20px;
     }
   }
 }

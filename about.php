@@ -30,10 +30,21 @@
             </div>
             <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
-
+                    <img class="about-card__details__emoji"
+                        src="<?php echo get_template_directory_uri(); ?>/img/cool.svg" alt="">
                     <p>Harry is passionate about web development, has an appetite for luncheon meats and makes smart
                         investments in fine ice-cream. In his spare time Hary utilises his creative talents building web
                         games, experimenting with digital art and playing ultimate frisbee.</p>
+                    <div class=" about-card__details__social-icons">
+                        <ul>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,10 +68,22 @@
             </div>
             <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
+                    <img class="about-card__details__emoji"
+                        src="<?php echo get_template_directory_uri(); ?>/img/smile.svg" alt="">
 
                     <p>Lover of a good meme, Lily fancies both design and front-end development. She is an avid
                         basketballer, runner and exercise junkie. Crocheting with a cup of tea in front of the telly?
                         Yep you'll find her doing that, too.</p>
+                    <div class=" about-card__details__social-icons">
+                        <ul>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,10 +99,23 @@
             </div>
             <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
+                    <img class="about-card__details__emoji"
+                        src="<?php echo get_template_directory_uri(); ?>/img/emoji2.svg" alt="">
+
                     <p>Sophia has a serious design crush but a business brain, so she's naturally found a home at
                         Impulse flexing her management muscle and keeping the creatives in line. She likes to taunt the
-                        other Humaans by avoiding board game sessions but loves to socialise on the outskirts. She is
+                        other people by avoiding board game sessions but loves to socialise on the outskirts. She is
                         the perfect ying, to their nerd yang.</p>
+                    <div class=" about-card__details__social-icons">
+                        <ul>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,10 +130,22 @@
             </div>
             <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
+                    <img class="about-card__details__emoji"
+                        src="<?php echo get_template_directory_uri(); ?>/img/cowboy.svg" alt="">
                     <p>Alex has a healthy obsession with all things digital, strongly believing in the intersection of
                         design and technology. Constantly exploring and prototyping new ideas, he'll jump at the chance
                         to be involved in any aspect of a project. You may catch him reading Malcolm Gladwell or
                         watching reruns of The Sopranos.</p>
+                    <div class=" about-card__details__social-icons">
+                        <ul>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,9 +162,21 @@
             </div>
             <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
+                    <img class="about-card__details__emoji"
+                        src="<?php echo get_template_directory_uri(); ?>/img/emoji_headphones.svg" alt="">
                     <p>Ashley writes and writes. She also makes stuff out of yarn, paper, fabric, clay, electronics, old
                         boxes and whatever else she can get her hands on. You'll usually find her gardening, gaming,
                         training or playing a spot of football.</p>
+                    <div class=" about-card__details__social-icons">
+                        <ul>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,8 +191,20 @@
             </div>
             <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
+                    <img class="about-card__details__emoji"
+                        src="<?php echo get_template_directory_uri(); ?>/img/emoji.svg" alt="">
                     <p>James is a compulsive tinkerer with technology. He susceptible to long hiccups and when he's not
                         fishing quadcopters out of a tree he can be found building contraptions with his kids.</p>
+                    <div class=" about-card__details__social-icons">
+                        <ul>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,50 +223,59 @@
             </div>
             <div class="about-card__side about-card__side--back ">
                 <div class="about-card__details">
+                    <img class="about-card__details__emoji"
+                        src="<?php echo get_template_directory_uri(); ?>/img/emoji1.svg" alt="">
                     <p>Dominic helps our clients achieve their brand vision in the digital space through strategic
                         advice and streamlined project management. He also helps fellow musicians achieve their band
                         vision in the analogue space as a freelance bassist. It's kind of the same thing to him.</p>
+                    <div class=" about-card__details__social-icons">
+                        <ul>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg"
+                                        alt=""></a></li>
+                            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="about__summary">
-        <p>What we do</p>
-        <ul>
-            <li>World-class digital </li>
-            <li> Expect creativity</li>
-            <li> Hustle</li>
-            <li>Obsess over details</li>
-            <li> Value relationships</li>
-            <li> High-five</li>
-            <li> Make things, break things</li>
-            <li> Meme</li>
-            <li> Exceed expectations</li>
-            <li>Party</li>
-        </ul>
-        <p>What we don't</p>
-        <ul>
-            <li>Work late / weekends </li>
 
-
-
-
-
-
-
-
-
-            <li> Have a sales team</li>
-            <li> Resist cake</li>
-            <li> Sacrifice quality for profit</li>
-            <li> Fax</li>
-            <li> Lose at Mario Kart</li>
-            <li> Work for free</li>
-            <li> Egos</li>
-            <li> Impossible deadlines</li>
-            <li> Outsource</li>
-        </ul>
+        <div>
+            <p>What we do</p>
+            <ul>
+                <li>World-class digital </li>
+                <li> Expect creativity</li>
+                <li> Hustle</li>
+                <li>Obsess over details</li>
+                <li> Value relationships</li>
+                <li> High-five</li>
+                <li> Make things, break things</li>
+                <li> Meme</li>
+                <li> Exceed expectations</li>
+                <li>Party</li>
+            </ul>
+        </div>
+        <div>
+            <p>What we don't</p>
+            <ul>
+                <li>Work late / weekends </li>
+                <li> Have a sales team</li>
+                <li> Resist cake</li>
+                <li> Sacrifice quality for profit</li>
+                <li> Fax</li>
+                <li> Lose at Mario Kart</li>
+                <li> Work for free</li>
+                <li> Egos</li>
+                <li> Impossible deadlines</li>
+                <li> Outsource</li>
+            </ul>
+        </div>
     </div>
+
 
 </main>
 

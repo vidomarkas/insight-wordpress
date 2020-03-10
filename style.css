@@ -737,6 +737,21 @@ body {
     perspective: 1500px;
     position: relative;
     height: 420px; }
+    .about-card__details {
+      padding: 40px;
+      text-align: center; }
+      .about-card__details__emoji {
+        width: 100px;
+        height: 100px; }
+      .about-card__details__social-icons ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0; }
+      .about-card__details__social-icons img {
+        height: 30px;
+        width: 30px;
+        margin: 10px; }
     .about-card__side {
       height: 420px;
       transition: all 0.8s ease;
@@ -777,6 +792,16 @@ body {
       left: 10px;
       color: #fff;
       text-shadow: 2px 2px rgba(0, 0, 0, 0.89); }
+  .about__summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .about__summary p {
+      font-size: 40px;
+      font-weight: 600;
+      font-family: "Source Serif Pro", serif; }
+    .about__summary ul {
+      padding: 20px; }
 
 .heading__primary--about {
   font-size: 39px;
