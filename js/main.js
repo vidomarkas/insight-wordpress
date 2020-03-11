@@ -129,3 +129,18 @@ function changeActiveSection() {
     }
   }
 }
+
+if (window.location.pathname === "/wordpress/contact/") {
+  const header = document.getElementById("contact-header");
+  window.onscroll = function() {
+    if (document.documentElement.scrollTop > 1100) {
+      header.style.position = "absolute";
+      header.style.top = "1100px";
+
+      console.log(header);
+    } else {
+      header.style.position = "fixed";
+      header.style.top = "0";
+    }
+  };
+}
