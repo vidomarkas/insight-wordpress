@@ -1,6 +1,5 @@
 .contact {
   position: relative;
-
   background-color: #edf6fa;
 }
 
@@ -32,15 +31,28 @@
 .contact-form {
   border-top: 0.33333rem solid #7971bd;
   background-color: #fff;
-  height: 1800px;
   width: 600px;
   margin: 100px auto;
   box-shadow: 0 0 1.11111rem rgba(0, 0, 0, 0.22);
   border-radius: 4px;
   padding: 24px;
+  text-align: left;
 
   &__section {
     padding: 2.4rem 3rem;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 500;
+    color: #424242;
+  }
+  &__heading {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #424242;
   }
 
   &__field {
@@ -60,5 +72,93 @@
       appearance: none;
       font-size: 1rem;
     }
+  }
+
+  &__div span > select {
+    width: 50%;
+  }
+}
+
+.heading__primary--contact {
+  font-size: 47px;
+  line-height: 63px;
+}
+
+.wpcf7-form-control-wrap input[type="text"],
+.wpcf7-form-control-wrap input[type="email"] {
+  border: 2px solid #ccd8df;
+  transition: border-color 0.1s;
+  outline: none;
+  color: #737373;
+  font-weight: 400;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 0.33333rem;
+  height: 2.7rem;
+  background-color: transparent;
+  appearance: none;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+.wpcf7-form-control-wrap select {
+  border: 2px solid #ccd8df;
+  transition: border-color 0.1s;
+  outline: none;
+  color: #737373;
+  font-weight: 400;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 0.33333rem;
+  height: 2.7rem;
+  background-color: transparent;
+  appearance: none;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.wpcf7-form-control-wrap input[type="text"]:focus,
+.wpcf7-form-control-wrap input[type="email"]:focus,
+.wpcf7-form-control-wrap select:focus {
+  border-color: #7971bd;
+}
+
+.wpcf7-list-item {
+  display: block !important;
+}
+
+.wpcf7-form p {
+  display: inline-block;
+}
+
+.wpcf7-form p > br {
+  display: none;
+}
+.wpcf7-form hr {
+  margin-left: -10px;
+  margin-right: -10px;
+  border: 1px solid #ccd8df;
+}
+
+.button__div {
+}
+
+.wpcf7-form input[type="submit"] {
+  width: auto;
+  border: none;
+  cursor: pointer;
+  background-color: #f1911f;
+  color: #fff;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  display: block;
+  padding: 0 2.3rem;
+  height: 2.6rem;
+  border-radius: 4px;
+  margin: 20px auto;
+  font-size: 20px;
+  &:hover {
+    background-color: #e8850f;
   }
 }

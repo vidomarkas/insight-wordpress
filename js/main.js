@@ -133,7 +133,7 @@ function changeActiveSection() {
 if (window.location.pathname === "/wordpress/contact/") {
   const header = document.getElementById("contact-header");
   window.onscroll = function() {
-    if (document.documentElement.scrollTop > 1100) {
+    if (document.documentElement.scrollTop > 1230) {
       header.style.position = "absolute";
       header.style.top = "1100px";
 
