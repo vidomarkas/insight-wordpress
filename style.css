@@ -809,14 +809,13 @@ body {
 
 .contact {
   position: relative;
-  height: 2000px;
-  z-index: -6;
   background-color: #edf6fa; }
 
 .main-content {
   width: 600px;
   margin: 100px auto;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .space-between {
   justify-content: space-between; }
@@ -826,7 +825,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -5;
   padding-bottom: 50px; }
 
 .testimonial-fullwidth {
@@ -840,7 +838,7 @@ body {
   width: 600px;
   margin: 100px auto;
   box-shadow: 0 0 1.11111rem rgba(0, 0, 0, 0.22);
-  border-radius: 0.22222rem;
+  border-radius: 4px;
   padding: 24px; }
   .contact-form__section {
     padding: 2.4rem 3rem; }
