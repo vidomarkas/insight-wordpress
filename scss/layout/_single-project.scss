@@ -1,0 +1,52 @@
+.project-header {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  &__background {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    width: 100%;
+
+    &__overlay {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(
+        to bottom left,
+        rgba(0, 0, 0, 0.678),
+        rgba(0, 0, 0, 0)
+      );
+    }
+  }
+}
+
+.project-main {
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.project-content {
+  max-width: 60%;
+  margin: 0 auto;
+  & h2 {
+    font-family: "Source Serif Pro", serif;
+    color: #424242;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  & p {
+    font-family: "Roboto", sans-serif;
+    color: #424242;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+  }
+}

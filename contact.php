@@ -29,9 +29,13 @@
     </div>
 </div>
 <div class="testimonial testimonial-fullwidth">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eligendi, minus praesentium eum similique
-        voluptates a blanditiis fugit autem rem saepe eaque cupiditate, quisquam dignissimos voluptas temporibus tempora
-        laboriosam cumque!</p>
+<div class="contact-testimonial__container">
+
+    <p class="heading heading__primary--contact contact-testimonial__text" >Access consumers when you need them, the way you
+        need them, to build
+        brands that beat their
+        expectations.</p>
+</div>
 </div>
 
 

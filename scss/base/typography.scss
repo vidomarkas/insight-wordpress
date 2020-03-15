@@ -10,6 +10,10 @@ body {
   color: #424242;
   font-weight: 400;
 
+  &--white {
+    color: #fff;
+  }
+
   &__primary {
     font-size: 61px;
     line-height: 73px;

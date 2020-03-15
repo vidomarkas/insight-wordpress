@@ -329,6 +329,8 @@ body {
   font-family: "Source Serif Pro", serif;
   color: #424242;
   font-weight: 400; }
+  .heading--white {
+    color: #fff; }
   .heading__primary {
     font-size: 61px;
     line-height: 73px;
@@ -944,6 +946,23 @@ body {
   .wpcf7-form input[type="submit"]:hover {
     background-color: #e8850f; }
 
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+  border: 2px solid #dd194a;
+  border-radius: 4px; }
+
+.wpcf7-not-valid {
+  border: 2px solid #dd194a !important; }
+
+.contact-testimonial__container {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.contact-testimonial__text {
+  color: #fff; }
+
 .services {
   background-color: #edf6fa; }
 
@@ -1127,6 +1146,44 @@ body {
     background-position: center center; }
   .blog__post__excerpt p {
     color: #5a5a5a; }
+
+.project-header {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .project-header__background {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    width: 100%; }
+    .project-header__background__overlay {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0)); }
+
+.project-main__container {
+  width: 80%;
+  margin: 0 auto; }
+
+.project-content {
+  max-width: 60%;
+  margin: 0 auto; }
+  .project-content h2 {
+    font-family: "Source Serif Pro", serif;
+    color: #424242;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px; }
+  .project-content p {
+    font-family: "Roboto", sans-serif;
+    color: #424242;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px; }
 
 .footer {
   background: linear-gradient(90deg, #00a0e0 0%, #00abef 100%);

@@ -141,9 +141,6 @@
   border: 1px solid #ccd8df;
 }
 
-.button__div {
-}
-
 .wpcf7-form input[type="submit"] {
   width: auto;
   border: none;
@@ -160,5 +157,28 @@
   font-size: 20px;
   &:hover {
     background-color: #e8850f;
+  }
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+  border: 2px solid #dd194a;
+  border-radius: 4px;
+}
+
+.wpcf7-not-valid {
+  border: 2px solid #dd194a !important;
+}
+
+.contact-testimonial {
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: #fff;
   }
 }

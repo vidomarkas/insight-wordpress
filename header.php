@@ -59,6 +59,8 @@
         </div>
     </nav>
 
+
+
     <div id="searchbox" class="searchbox">
         <?php get_search_form();?>
     </div>
