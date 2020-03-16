@@ -143,3 +143,15 @@ if (window.location.pathname === "/wordpress/contact/") {
     }
   };
 }
+// Email list sign up modal
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const popup = document.querySelector(".email-popup-con");
+
+  document.getElementById("signUp").addEventListener("click", () => {
+    popup.style.display = "block";
+  });
+  document.getElementById("nothanks").addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+});

@@ -5,7 +5,7 @@
             <h3 class="footer__heading">Contact us</h3>
             <p class="footer__text">Interested in working together?
                 Get in touch and let’s talk.</p>
-            <a href="#" class="footer__btn">
+            <a href="<?php echo site_url('/contact');?>" class="footer__btn">
                 Contact us
             </a>
 
@@ -14,7 +14,7 @@
             <h3 class="footer__heading">Stay connected</h3>
             <p class="footer__text">Subscribe to receive insights, updates
                 and research from the Catalyx team.</p>
-            <a href="#" class="footer__btn">
+            <a class="footer__btn" id="signUp">
                 Sign up
             </a>
         </div>
@@ -44,13 +44,13 @@
         </ul>
     </div>
     <div class="footer__credentials">
-        <p>© 2020 Catalyx. All rights reserved. Terms & conditions</p>
+        <p>&copy; 2020 Catalyx. All rights reserved. Terms & conditions</p>
     </div>
 
 
 </footer>
 <?php  wp_footer(); ?>
-<!-- <script src="/js/main.js"></script> -->
+<?php include 'email-popup.php';?>
 </body>
 
 </html>
