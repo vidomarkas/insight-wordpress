@@ -303,6 +303,9 @@ template {
 [hidden] {
   display: none; }
 
+ul {
+  padding-inline-start: 0; }
+
 *,
 *:before,
 *:after {
@@ -503,6 +506,54 @@ body {
     width: 100%; }
   .searchbox form {
     display: flex; }
+
+#sidebar h3 {
+  font-family: "Source Serif Pro", serif;
+  color: #424242;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px; }
+
+#sidebar li {
+  margin: 10px auto; }
+  #sidebar li a {
+    color: #00aaee;
+    line-height: 10px;
+    transition: color 0.4s; }
+    #sidebar li a:active {
+      color: #424242; }
+    #sidebar li a:hover {
+      color: #424242; }
+
+#sidebar input {
+  border: 2px solid #ccd8df;
+  transition: border-color 0.1s;
+  outline: none;
+  color: #737373;
+  font-weight: 400;
+  width: 80%;
+  padding: 0 10px;
+  border-radius: 0.33333rem;
+  height: 30px;
+  background-color: transparent;
+  appearance: none;
+  font-size: 1rem; }
+  #sidebar input:hover {
+    border-color: #7971bd; }
+  #sidebar input:focus {
+    border-color: #7971bd; }
+
+#sidebar button {
+  border: 2px solid #ccd8df;
+  border-radius: 4px;
+  transition: border-color 0.1s;
+  outline: none;
+  color: #f5f5f5;
+  background-color: #00aaee;
+  height: 30px; }
+  #sidebar button:hover {
+    background-color: #7971bd;
+    cursor: pointer; }
 
 .homepage-header {
   height: 100vh;
