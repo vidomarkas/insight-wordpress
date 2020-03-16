@@ -131,13 +131,12 @@ function changeActiveSection() {
 }
 
 if (window.location.pathname === "/wordpress/contact/") {
+  document.querySelector("body").style.backgroundColor = "#edf6fa";
   const header = document.getElementById("contact-header");
   window.onscroll = function() {
     if (document.documentElement.scrollTop > 1230) {
       header.style.position = "absolute";
       header.style.top = "1100px";
-
-      console.log(header);
     } else {
       header.style.position = "fixed";
       header.style.top = "0";

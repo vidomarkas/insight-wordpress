@@ -313,8 +313,7 @@ template {
 html,
 body {
   height: 100%;
-  scroll-behavior: smooth;
-  background-color: #edf6fa; }
+  scroll-behavior: smooth; }
 
 .main {
   margin: 0 auto; }
@@ -1143,7 +1142,8 @@ div.wpcf7-aborted {
     width: 100%;
     background-color: #ffffff;
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center center;
+    background-size: cover; }
   .blog__post__excerpt p {
     color: #5a5a5a; }
 
@@ -1184,6 +1184,37 @@ div.wpcf7-aborted {
     font-weight: 300;
     font-size: 20px;
     line-height: 35px; }
+
+.content {
+  display: flex;
+  margin-top: 60px; }
+
+.project-header__background.post-header__background {
+  height: 50vh; }
+
+.post-sidebar {
+  width: 18%; }
+
+.post-content {
+  width: 80%; }
+
+.post-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.post-image {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#post-meta {
+  font-size: 14px;
+  color: #737373; }
 
 .footer {
   background: linear-gradient(90deg, #00a0e0 0%, #00abef 100%);
