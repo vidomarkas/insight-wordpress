@@ -443,6 +443,21 @@ body {
     .homepage-card__person--reverse {
       background: linear-gradient(to left, transparent, transparent 50%, #f5f5f5 50%, #f5f5f5 100%); }
 
+.btn {
+  border: 1px solid #eee;
+  padding: 6px 20px; }
+  .btn-readmore {
+    background-color: #fff;
+    color: #00aaed;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: all 0.4s; }
+    .btn-readmore:hover {
+      background-color: #00aaed;
+      color: #fff; }
+
 .nav {
   height: 72px;
   width: 80%;
@@ -1218,7 +1233,7 @@ div.wpcf7-aborted {
 
 .project-main__container {
   width: 80%;
-  margin: 0 auto; }
+  margin: 60px auto; }
 
 .project-content {
   max-width: 60%;
@@ -1266,6 +1281,38 @@ div.wpcf7-aborted {
 #post-meta {
   font-size: 14px;
   color: #737373; }
+
+.post-link {
+  color: #7971bd;
+  font-weight: 500; }
+
+.search-container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 200px auto 60px; }
+
+.result {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid #eee;
+  position: relative;
+  border-radius: 4px; }
+  .result-title {
+    color: #00aaed;
+    margin-top: 0; }
+  .result-image {
+    flex: 0 0 400px; }
+    .result-image__background {
+      height: 200px;
+      width: 300px;
+      background-position: center center;
+      background-size: cover; }
+  .result-description {
+    padding: 20px; }
+    .result-description p {
+      margin: 0; }
 
 .footer {
   background: linear-gradient(90deg, #00a0e0 0%, #00abef 100%);

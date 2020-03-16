@@ -1,0 +1,17 @@
+.btn {
+  border: 1px solid #eee;
+  padding: 6px 20px;
+  &-readmore {
+    background-color: #fff;
+    color: #00aaed;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: all 0.4s;
+    &:hover {
+      background-color: #00aaed;
+      color: #fff;
+    }
+  }
+}

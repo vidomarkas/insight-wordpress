@@ -1,0 +1,40 @@
+.search-container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 200px auto 60px;
+}
+
+.search-results {
+}
+
+.result {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid #eee;
+  position: relative;
+  border-radius: 4px;
+
+  &-title {
+    color: #00aaed;
+    margin-top: 0;
+  }
+
+  &-image {
+    flex: 0 0 400px;
+
+    &__background {
+      height: 200px;
+      width: 300px;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  &-description {
+    padding: 20px;
+    p {
+      margin: 0;
+    }
+  }
+}

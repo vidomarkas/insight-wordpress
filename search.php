@@ -1,46 +1,47 @@
 <?php get_header();?>
 
+<main class="success-stories__container">
+    <header>
+        <h2 class="heading heading__secondary underline underline--purple">Search results for
+            <?php echo get_search_query();?></h2>
+    </header>
 
-
-<main>
-    <div class="container">
-
-        <h2 class="page-heading">Search results for <?php echo get_search_query();?></h2>
-
+    <div class="search-results">
         <?php if(have_posts()){ ?>
-        <section>
 
-            <?php
+
+        <?php
         while( have_posts()){
             the_post();
     ?>
 
-            <div class="card">
-                <div class="card-image">
-                    <a href="<?php  the_permalink();?>"><img
-                            src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>" alt="img1" /></a>
-                    <div class="card-description">
-                        <a href="<?php  the_permalink();?>">
-                            <h3><?php  the_title();?></h3>
-                        </a>
-                        <div class="card-meta">
-                            Posted by <?php the_author();?> on <?php the_time('F j, Y');?>
-                            <?php if(get_post_type() == 'post'){?>
-
-                            in <a href="#"><?php echo get_the_category_list(', ')?></a>
+        <div class="result" <?php if(get_post_type() == 'project'){?> style="background-color: #eee" <?php }?>>
+            <div class="result-image">
+                <div class="result-image__background"
+                    style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID());?>)">
 
 
-                            <?php }?>
-                        </div>
-                        <p><?php echo wp_trim_words(get_the_excerpt(), 30) ;?></p>
-                        <a href="<?php  the_permalink();?>" class="btn-readmore">Read more</a>
-                    </div>
                 </div>
             </div>
 
-            <?php } wp_reset_query(); ?>
+            <div class="result-description">
+                <a href="<?php  the_permalink();?>">
+                    <h3 class="result-title"><?php  the_title();?></h3>
+                </a>
+                <div class="card-meta">
+                    <?php if(get_post_type() == 'post'){?>
+                    Posted on <?php the_time('F j, Y');?>
+                    <?php }?>
+                </div>
+                <p><?php echo wp_trim_words(get_the_excerpt(), 30) ;?></p>
+                <a href="<?php  the_permalink();?>" class="btn btn-readmore">Read more</a>
+            </div>
+        </div>
 
-        </section>
+
+        <?php } wp_reset_query(); ?>
+
+
 
         <?php } else {?>
         <div class="no-results">
@@ -48,11 +49,15 @@
         </div>
         <?php }?>
 
-
-
-        <div class="pagination">
-            <?php echo paginate_links(); ?></div>
-
     </div>
+
+
+
+    <div class="success-stories__pagination">
+        <?php echo paginate_links(); ?></div>
+
+
 </main>
+
+
 <?php get_footer();?>
