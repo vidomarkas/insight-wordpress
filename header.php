@@ -28,35 +28,39 @@
     </div>
 
     <nav class="nav">
-        <div class="nav__logo-container"><a href="<?php echo site_url();?>"><img class="nav__logo"
-                    src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo" /></a></div>
+        <div class="nav__container">
+            <div class="nav__logo-container"><a href="<?php echo site_url();?>"><img class="nav__logo"
+                        src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo" /></a></div>
 
-        <ul class="nav__links">
-            <li class="nav__link"><a <?php if(is_front_page()) echo 'class="active"' ?>
-                    href="<?php echo site_url();?>">Home</a></li>
-            <li class="nav__link"><a <?php if(is_page('services')) echo 'class="active"' ?>
-                    href="<?php echo site_url('/services');?>">Services</a></li>
-            <li class="nav__link"><a <?php if(is_page('news')) echo 'class="active"' ?>
-                    href="<?php echo site_url('/news');?>">News & Views</a></li>
-            <li class="nav__link"><a <?php if(get_post_type() == 'project') echo 'class="active"' ?>
-                    href="<?php echo site_url('/projects');?>">Success stories</a></li>
-            <li class="nav__link"><a <?php if(is_page('about')) echo 'class="active"' ?>
-                    href="<?php echo site_url('/about');?>">About</a>
-            </li>
-            <li class="nav__link"><a <?php if(is_page('contact')) echo 'class="active"' ?>
-                    href="<?php echo site_url('/contact');?>">Contact</a>
-            </li>
+            <ul class="nav__links">
+                <li class="nav__link"><a <?php if(is_front_page()) echo 'class="active"' ?>
+                        href="<?php echo site_url();?>">Home</a></li>
+                <li class="nav__link"><a <?php if(is_page('services')) echo 'class="active"' ?>
+                        href="<?php echo site_url('/services');?>">Services</a></li>
+                <li class="nav__link"><a <?php if(is_page('news')) echo 'class="active"' ?>
+                        href="<?php echo site_url('/news');?>">News & Views</a></li>
+                <li class="nav__link"><a <?php if(get_post_type() == 'project') echo 'class="active"' ?>
+                        href="<?php echo site_url('/projects');?>">Success stories</a></li>
+                <li class="nav__link"><a <?php if(is_page('about')) echo 'class="active"' ?>
+                        href="<?php echo site_url('/about');?>">About</a>
+                </li>
+                <li class="nav__link"><a <?php if(is_page('contact')) echo 'class="active"' ?>
+                        href="<?php echo site_url('/contact');?>">Contact</a>
+                </li>
 
-            <li class="nav__link"><a href="#" id="search-icon">
-                    <i class="fas fa-search"></i></a></li>
-        </ul>
-        <div id="menu-icon" class="nav__burger-icon">
-            <!-- prettier-ignore -->
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path fill="#eeeeee" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-            </svg>
+                <li class="nav__link"><a href="#" id="search-icon">
+                        <i class="fas fa-search"></i></a></li>
+            </ul>
+            <div id="menu-icon" class="nav__burger-icon">
+                <!-- prettier-ignore -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="#eeeeee" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </div>
         </div>
+
+
     </nav>
 
 

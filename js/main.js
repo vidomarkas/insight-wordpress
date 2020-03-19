@@ -96,7 +96,7 @@ if (window.location.pathname === "/wordpress/services/") {
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
     if (
-      window.pageYOffset >= sticky &&
+      window.pageYOffset + 100 >= sticky &&
       window.pageYOffset <= servicesSection.offsetBottom
     ) {
       servicesNav.classList.add("sticky-nav");

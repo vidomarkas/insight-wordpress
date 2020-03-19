@@ -1,14 +1,12 @@
 <div class="email-popup-con">
 
     <div class="email-popup-inner-con">
-        <div class="email-popup-img-con">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Email Subscribe Image">
-            <div class="message-overlay-con">
-                <span class="message">Join Our Mailing List</span>
-                <span class="nothanks" id="nothanks">No Thanks</span>
-            </div>
+        <span class="nothanks" id="nothanks"><i class="fas fa-3x fa-times"></i></span>
+        <h2 class="popup-heading heading heading__primary">Subscribe to our insights</h2>
+        <div class="popup-fields">
+
+            <?php echo do_shortcode( '[contact-form-7 id="216" title="newsletter"]' ); ?>
         </div>
-        <?php echo do_shortcode( 'SHORTCODE FOR YOUR FORM HERE' ); ?>
     </div>
 
 </div>
