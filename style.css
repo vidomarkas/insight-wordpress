@@ -535,27 +535,25 @@ body {
     padding: 0px 12px; }
   .searchbox form {
     display: flex; }
-
-#search-btn {
-  font-family: "fontawesome";
-  color: #bbb;
-  display: inline-block;
-  background-color: #fff;
-  height: 48px;
-  width: 48px;
-  line-height: 48px;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  border-left: 1px solid #ddd;
-  position: absolute;
-  top: 0;
-  right: 0;
-  box-shadow: 1px 2px 2px #ddd;
-  border-radius: 0px 6px 6px 0px;
-  transition: color 0.2s; }
-  #search-btn:hover {
-    color: #000; }
+  .searchbox #search-btn {
+    color: #bbb;
+    display: inline-block;
+    background-color: #fff;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 1px 2px 2px #ddd;
+    border-radius: 0px 6px 6px 0px;
+    transition: color 0.2s; }
+    .searchbox #search-btn:hover {
+      color: #000; }
 
 #sidebar h3 {
   font-family: "Source Serif Pro", serif;
@@ -1393,7 +1391,8 @@ div.wpcf7-aborted {
 .footer {
   background: linear-gradient(90deg, #00a0e0 0%, #00abef 100%);
   color: #ffffff;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   .footer__container {
     width: 80%;
     margin: 0 auto;

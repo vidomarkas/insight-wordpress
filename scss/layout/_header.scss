@@ -105,27 +105,26 @@
   & form {
     display: flex;
   }
-}
 
-#search-btn {
-  font-family: "fontawesome";
-  color: #bbb;
-  display: inline-block;
-  background-color: #fff;
-  height: 48px;
-  width: 48px;
-  line-height: 48px;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  border-left: 1px solid #ddd;
-  position: absolute;
-  top: 0;
-  right: 0;
-  box-shadow: 1px 2px 2px #ddd;
-  border-radius: 0px 6px 6px 0px;
-  transition: color 0.2s;
-  &:hover {
-    color: #000;
+  #search-btn {
+    color: #bbb;
+    display: inline-block;
+    background-color: #fff;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 1px 2px 2px #ddd;
+    border-radius: 0px 6px 6px 0px;
+    transition: color 0.2s;
+    &:hover {
+      color: #000;
+    }
   }
 }
