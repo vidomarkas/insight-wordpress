@@ -48,7 +48,7 @@
                         href="<?php echo site_url('/contact');?>">Contact</a>
                 </li>
 
-                <li class="nav__link"><a href="#" id="search-icon">
+                <li class="nav__link"><a id="search-icon">
                         <i class="fas fa-search"></i></a></li>
             </ul>
             <div id="menu-icon" class="nav__burger-icon">

@@ -4,14 +4,13 @@ const searchIcon = document.getElementById("search-icon");
 const searchBox = document.getElementById("searchbox");
 
 searchIcon.addEventListener("click", () => {
-  if (searchBox.style.top === "72px") {
-    searchBox.style.top = "20px";
+  if (searchBox.style.top === "100px") {
+    searchBox.style.top = "-200px";
     searchBox.style.pointerEvents = "none";
-    console.log("clicked");
   } else {
-    searchBox.style.top = "72px";
+    searchBox.style.top = "100px";
     searchBox.style.pointerEvents = "auto";
-    console.log("clicked else");
+    searchBox.style.display = "block";
   }
 });
 
