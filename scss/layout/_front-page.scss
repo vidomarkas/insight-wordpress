@@ -286,6 +286,17 @@
   font-family: "Source Serif Pro", serif;
   text-align: center;
   padding: 40px;
+
+  p {
+    @include maxw(1100) {
+      line-height: 38px;
+      font-size: 26px;
+    }
+    @include maxw(900) {
+      line-height: 24px;
+      font-size: 18px;
+    }
+  }
 }
 
 .testimonial {
