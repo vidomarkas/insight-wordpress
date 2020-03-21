@@ -19,7 +19,7 @@
 
 <main class="about">
 
-    <h2 class="heading heading__primary--about underline underline--purple">Meet the minds shaping an industry.</h2>
+    <h2 class="heading heading__primary--about underline ">Meet the minds shaping an industry.</h2>
     <div class="about-grid">
         <div class="about-grid__item about-card ">
             <div class="about-card__side about-card__side--front">
@@ -53,7 +53,7 @@
 
 
 
-        <div class="about-grid__item--quote homepage-card__heading homepage-card__heading--black">
+        <div class="about-grid__item--quote ">
             <p>We're a team of makers, thinkers, explorers and theatre singers.<br><br> We approach work and play with
                 curiosity
                 and experimentation, using what we learn to create meaningful digital products that connect with people,

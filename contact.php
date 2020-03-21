@@ -18,7 +18,7 @@
     </header>
 
     <div class="main-content">
-        <div class="about__header__text">
+        <div class="contact__header__text">
             <h1 class="heading heading__primary--contact ">Want to build your very own CROWD?
             </h1>
             <h2 class="heading heading__primary--contact underline underline--purple">Start here...</h2>
@@ -29,13 +29,14 @@
     </div>
 </div>
 <div class="testimonial testimonial-fullwidth">
-<div class="contact-testimonial__container">
+    <div class="contact-testimonial__container">
 
-    <p class="heading heading__primary--contact contact-testimonial__text" >Access consumers when you need them, the way you
-        need them, to build
-        brands that beat their
-        expectations.</p>
-</div>
+        <p class="heading heading__primary--contact contact-testimonial__text">Access consumers when you need them, the
+            way you
+            need them, to build
+            brands that beat their
+            expectations.</p>
+    </div>
 </div>
 
 

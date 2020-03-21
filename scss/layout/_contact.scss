@@ -1,13 +1,20 @@
 .contact {
   position: relative;
   background-color: #edf6fa;
+
+  &__header__text {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .main-content {
-  width: 600px;
+  width: 96%;
+  max-width: 600px;
   margin: 100px auto;
   text-align: center;
   position: relative;
+  z-index: 49;
 }
 
 .space-between {
@@ -31,7 +38,7 @@
 .contact-form {
   border-top: 0.33333rem solid #7971bd;
   background-color: #fff;
-  width: 600px;
+  width: 100%;
   margin: 100px auto;
   box-shadow: 0 0 1.11111rem rgba(0, 0, 0, 0.22);
   border-radius: 4px;
