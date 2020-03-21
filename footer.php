@@ -51,6 +51,7 @@
 </footer>
 <?php  wp_footer(); ?>
 <?php include 'email-popup.php';?>
+
 </body>
 
 </html>

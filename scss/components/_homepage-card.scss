@@ -1,14 +1,30 @@
 .homepage-cards__container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
+  @include maxw(650) {
+    width: 90%;
+  }
+
+  @include maxw(550) {
+    width: 96%;
+  }
 }
 
 .homepage-card {
   width: 50%;
   display: flex;
   padding: 20px;
+  @include maxw(1341) {
+    width: 100%;
+  }
+
+  @include maxw(700) {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
 
   &--reverse {
     flex-direction: row-reverse;
@@ -17,6 +33,50 @@
   &__content {
     background-color: #f5f5f5;
     padding: 20px;
+    @include maxw(500) {
+      padding: 10px;
+    }
+  }
+
+  &__heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #7971bd;
+    margin: 10px 0;
+
+    @include maxw(500) {
+      font-size: 24px;
+    }
+    &--black {
+      color: #424242;
+    }
+  }
+
+  &__text {
+    font-family: "Source Serif Pro", serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #424242;
+
+    @include maxw(500) {
+      font-size: 16px;
+    }
+  }
+
+  &__btn {
+    color: #7971bd;
+    font-size: 20px;
+    line-height: 30px;
+
+    @include maxw(500) {
+      font-size: 16px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__person {
@@ -33,9 +93,20 @@
       #f5f5f5 50%,
       #f5f5f5 100%
     );
+
+    @include maxw(500) {
+      width: 140px;
+    }
+    @include maxw(420) {
+      width: 100px;
+      align-items: center;
+    }
+    @include maxw(375) {
+      display: none;
+    }
+
     img {
       width: 100%;
-      //   max-width: 100%;
     }
 
     &--reverse {

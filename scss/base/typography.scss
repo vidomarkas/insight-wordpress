@@ -46,35 +46,6 @@ body {
   }
 }
 
-.homepage-card__heading {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 42px;
-  color: #7971bd;
-  margin: 10px 0;
-  &--black {
-    color: #424242;
-  }
-}
-
-.homepage-card__text {
-  font-family: "Source Serif Pro", serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: #424242;
-}
-
-.homepage-card__btn {
-  color: #7971bd;
-  font-size: 20px;
-  line-height: 30px;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 .text-left {
   text-align: left;
 }

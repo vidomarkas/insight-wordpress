@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <script src="https://kit.fontawesome.com/386d3b000f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
     <?php wp_head(); ?>
 </head>
 
 <body>
+
     <div id="slideout-menu" class="nav-mobile">
         <ul>
             <li><a <?php if(is_front_page()) echo 'class="active"' ?> href="<?php echo site_url();?>">Home</a></li>
@@ -55,7 +58,7 @@
                 <!-- prettier-ignore -->
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                     <path d="M0 0h24v24H0z" fill="none" />
-                    <path fill="#eeeeee" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    <path fill="#000000" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
                 </svg>
             </div>
         </div>

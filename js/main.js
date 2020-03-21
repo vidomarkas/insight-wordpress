@@ -4,23 +4,22 @@ const searchIcon = document.getElementById("search-icon");
 const searchBox = document.getElementById("searchbox");
 
 searchIcon.addEventListener("click", () => {
-  if (searchBox.style.top === "100px") {
-    searchBox.style.top = "-200px";
+  if (searchBox.style.display === "block") {
+    searchBox.style.display = "none";
     searchBox.style.pointerEvents = "none";
   } else {
-    searchBox.style.top = "100px";
+    searchBox.style.display === "block";
     searchBox.style.pointerEvents = "auto";
-    searchBox.style.display = "block";
   }
 });
 
 menuIcon.addEventListener("click", () => {
-  if (slideoutMenu.style.opacity === "1") {
-    slideoutMenu.style.opacity = "0";
+  if (slideoutMenu.style.display === "block") {
+    slideoutMenu.style.display = "none";
 
     slideoutMenu.style.pointerEvents = "none";
   } else {
-    slideoutMenu.style.opacity = "1";
+    slideoutMenu.style.display = "block";
     slideoutMenu.style.pointerEvents = "auto";
   }
 });
