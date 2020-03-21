@@ -150,7 +150,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementById("signUp").addEventListener("click", () => {
     popup.style.display = "block";
   });
+
   document.getElementById("nothanks").addEventListener("click", () => {
+    console.log("click");
     popup.style.display = "none";
   });
 });

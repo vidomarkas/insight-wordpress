@@ -1685,23 +1685,49 @@ div.wpcf7-aborted {
   max-height: 100vh; }
 
 .email-popup-inner-con {
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px 60px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  height: 500px;
+  max-height: 100%; }
+
+.popup-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* spacing as needed */
+  padding: 20px 50px 20px 20px;
+  /* let it scroll */
+  overflow: auto; }
+  @media (max-width: 700px) {
+    .popup-content {
+      padding: 20px 10px 10px 10px; } }
 
 .popup-heading.heading.heading__primary {
   font-size: 30px;
   text-align: center; }
+  @media (max-width: 700px) {
+    .popup-heading.heading.heading__primary {
+      font-size: 20px; } }
 
 .popup-fields {
   width: 60%;
   margin: 0 auto; }
+  @media (max-width: 700px) {
+    .popup-fields {
+      width: 90%;
+      text-align: center; } }
+  @media (max-width: 700px) {
+    .popup-fields p {
+      font-size: 14px; } }
 
 .nothanks {
   position: absolute;
@@ -1710,7 +1736,8 @@ div.wpcf7-aborted {
   cursor: pointer;
   margin: 20px;
   color: #00aaee;
-  transition: color 0.3s; }
+  transition: color 0.3s;
+  z-index: 101; }
   .nothanks:hover {
     color: #00aaee; }
 
