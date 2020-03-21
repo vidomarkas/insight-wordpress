@@ -2,19 +2,31 @@
   max-width: 1200px;
   width: 80%;
   margin: 200px auto 60px;
+
+  @include maxw(1270) {
+    width: 90%;
+  }
 }
 
 .search-results {
+  @include maxw(868) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 .result {
   width: 100%;
-  height: 200px;
   margin-bottom: 20px;
   display: flex;
   border: 1px solid #eee;
   position: relative;
   border-radius: 4px;
+  @include maxw(868) {
+    flex-direction: column;
+    width: 300px;
+  }
 
   &-title {
     color: #00aaed;
@@ -23,6 +35,14 @@
 
   &-image {
     flex: 0 0 400px;
+    position: relative;
+
+    @include maxw(1144) {
+      flex: 0 0 300px;
+    }
+    @include maxw(864) {
+      flex: 0 0 210px;
+    }
 
     &__background {
       height: 200px;
@@ -33,8 +53,20 @@
   }
   &-description {
     padding: 20px;
+    @include maxw(1078) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @include maxw(864) {
+      margin-bottom: 30px;
+    }
     p {
       margin: 0;
+      @include maxw(1078) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
   }
 }

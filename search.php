@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<main class="success-stories__container">
+<main class="search-container">
     <header>
         <h2 class="heading heading__secondary underline underline--purple">Search results for
             <?php echo get_search_query();?></h2>
