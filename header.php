@@ -16,10 +16,18 @@
     <div id="slideout-menu" class="nav-mobile">
         <ul>
             <li><a <?php if(is_front_page()) echo 'class="active"' ?> href="<?php echo site_url();?>">Home</a></li>
-            <li><a <?php if(get_post_type() == 'post') echo 'class="active"' ?>
-                    href="<?php echo site_url('/blog');?>">Blog</a></li>
+
+
+            <li><a <?php if(is_page('services')) echo 'class="active"' ?>
+                    href="<?php echo site_url('/services');?>">Services</a></li>
+
+
+            <li><a <?php if(is_page('news')) echo 'class="active"' ?> href="<?php echo site_url('/news');?>">News &
+                    Views</a></li>
             <li><a <?php if(get_post_type() == 'project') echo 'class="active"' ?>
-                    href="<?php echo site_url('/news');?>">News & Views</a></li>
+                    href="<?php echo site_url('/projects');?>">Success stories</a></li>
+
+
             <li><a <?php if(is_page('about') ) echo 'class="active"' ?>
                     href="<?php echo site_url('/about');?>">About</a></li>
             <li><a <?php if(is_page('contact') ) echo 'class="active"' ?>
@@ -38,8 +46,12 @@
             <ul class="nav__links">
                 <li class="nav__link"><a <?php if(is_front_page()) echo 'class="active"' ?>
                         href="<?php echo site_url();?>">Home</a></li>
+
+
                 <li class="nav__link"><a <?php if(is_page('services')) echo 'class="active"' ?>
                         href="<?php echo site_url('/services');?>">Services</a></li>
+
+
                 <li class="nav__link"><a <?php if(is_page('news')) echo 'class="active"' ?>
                         href="<?php echo site_url('/news');?>">News & Views</a></li>
                 <li class="nav__link"><a <?php if(get_post_type() == 'project') echo 'class="active"' ?>

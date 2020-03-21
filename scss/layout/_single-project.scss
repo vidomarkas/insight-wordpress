@@ -4,6 +4,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
+  p {
+    @include maxw(900) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
   &__background {
     position: relative;
     background-repeat: no-repeat;
@@ -28,12 +35,20 @@
   &__container {
     width: 80%;
     margin: 60px auto;
+
+    @include maxw(900) {
+      width: 90%;
+    }
   }
 }
 
 .project-content {
   max-width: 60%;
   margin: 0 auto;
+
+  @include maxw(900) {
+    max-width: 90%;
+  }
   & h2 {
     font-family: "Source Serif Pro", serif;
     color: #424242;

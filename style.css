@@ -1578,6 +1578,10 @@ div.wpcf7-aborted {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+  @media (max-width: 900px) {
+    .project-header p {
+      font-size: 18px;
+      line-height: 28px; } }
   .project-header__background {
     position: relative;
     background-repeat: no-repeat;
@@ -1593,10 +1597,16 @@ div.wpcf7-aborted {
 .project-main__container {
   width: 80%;
   margin: 60px auto; }
+  @media (max-width: 900px) {
+    .project-main__container {
+      width: 90%; } }
 
 .project-content {
   max-width: 60%;
   margin: 0 auto; }
+  @media (max-width: 900px) {
+    .project-content {
+      max-width: 90%; } }
   .project-content h2 {
     font-family: "Source Serif Pro", serif;
     color: #424242;
@@ -1618,17 +1628,36 @@ div.wpcf7-aborted {
   height: 50vh; }
 
 .post-sidebar {
+  min-width: 182px;
   width: 18%; }
+  @media (max-width: 936px) {
+    .post-sidebar {
+      display: none; } }
 
 .post-content {
   width: 80%; }
+  @media (max-width: 936px) {
+    .post-content {
+      width: 100%; } }
 
 .post-header {
   position: absolute;
-  top: 50%;
+  top: 100px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: center; }
+  .post-header h2 {
+    margin: 0;
+    font-size: 51px;
+    line-height: 61px; }
+    @media (max-width: 1400px) {
+      .post-header h2 {
+        font-size: 30px;
+        line-height: 38px; } }
+    @media (max-width: 936px) {
+      .post-header h2 {
+        font-size: 26px;
+        line-height: 34px; } }
 
 .post-image {
   width: 100%;
@@ -1644,6 +1673,37 @@ div.wpcf7-aborted {
 .post-link {
   color: #7971bd;
   font-weight: 500; }
+
+.post-main__container {
+  width: 80%;
+  margin: 60px auto; }
+  @media (max-width: 936px) {
+    .post-main__container {
+      width: 90%;
+      margin: 20px auto; } }
+
+.post-content {
+  max-width: 60%;
+  margin: 0 auto; }
+  @media (max-width: 936px) {
+    .post-content {
+      max-width: 100%; } }
+  .post-content h2 {
+    font-family: "Source Serif Pro", serif;
+    color: #424242;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px; }
+    @media (max-width: 936px) {
+      .post-content h2 {
+        font-size: 26px;
+        line-height: 34px; } }
+  .post-content p {
+    font-family: "Roboto", sans-serif;
+    color: #424242;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px; }
 
 .search-container {
   max-width: 1200px;

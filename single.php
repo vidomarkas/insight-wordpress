@@ -7,16 +7,16 @@
 
 <div class="project-header__background post-header__background " style="background-color:#EDF6FA;">
     <header class="post-header">
-        <h2 class="heading heading heading__primary underline underline--purple"><?php the_title();?></h2>
+        <h2 class="heading heading__primary underline underline--purple"><?php the_title();?></h2>
 
     </header>
 </div>
-<main class="project-main">
+<main class="post-main">
 
 
 
     <?php }?>
-    <div class="project-main__container">
+    <div class="post-main__container">
 
 
         <div class="content">
@@ -24,7 +24,7 @@
             <aside id="sidebar" class="post-sidebar">
                 <?php dynamic_sidebar('main_sidebar');?>
             </aside>
-            <div class="project-content post-content">
+            <div class="post-content">
                 <div class="post-image"
                     style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID());?>')">
 
