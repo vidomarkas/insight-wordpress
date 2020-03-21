@@ -22,6 +22,14 @@ body {
     &--services {
       font-size: 43px;
       line-height: 58px;
+      @include maxw(643) {
+        font-size: 33px;
+        line-height: 43px;
+      }
+      @include maxw(1039) {
+        font-size: 33px;
+        line-height: 43px;
+      }
     }
   }
 

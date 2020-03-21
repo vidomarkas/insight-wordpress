@@ -14,8 +14,8 @@
     </header>
     <div id="services-nav" class="services-navigation">
         <ul class="services-navigation__list">
-            <li class="services-navigation__item activeSection"><a href="#insight-discovery"
-                    class="services-navigation__item__link">Insight
+            <li class="services-navigation__item "><a href="#insight-discovery"
+                    class="services-navigation__item__link activeSection">Insight
                     discovery</a></li>
             <li class="services-navigation__item"><a href="#innovation-development"
                     class="services-navigation__item__link">Innovation development</a></li>

@@ -63,6 +63,12 @@
   @include maxw(900) {
     padding: 20px 0;
   }
+
+  & header {
+    @include maxw(510) {
+      padding: 0 10px;
+    }
+  }
 }
 
 .homepage-cas {
