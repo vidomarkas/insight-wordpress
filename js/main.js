@@ -4,11 +4,12 @@ const searchIcon = document.getElementById("search-icon");
 const searchBox = document.getElementById("searchbox");
 
 searchIcon.addEventListener("click", () => {
+  console.log(searchBox.style.display);
   if (searchBox.style.display === "block") {
     searchBox.style.display = "none";
     searchBox.style.pointerEvents = "none";
   } else {
-    searchBox.style.display === "block";
+    searchBox.style.display = "block";
     searchBox.style.pointerEvents = "auto";
   }
 });

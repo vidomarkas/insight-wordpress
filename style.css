@@ -580,7 +580,7 @@ body {
 
 .searchbox {
   position: fixed;
-  right: 0;
+  right: 10%;
   top: 120px;
   display: none;
   pointer-events: none;
