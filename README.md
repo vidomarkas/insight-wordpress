@@ -3,11 +3,12 @@
 
 ## How to use:
 
-* Run XAMPP
+* Install & Run XAMPP https://www.apachefriends.org/index.html
 * Download latest WordPress install from https://wordpress.org/download/
 * Place WordPress install in the C:\xampp\htdocs
 * Move the downloaded insight-wordpress theme to C:\xampp\htdocs\wordpress\wp-content\themes
-* Be sure to have gulp-cli installed on your computer
+* Run ```npm install``` in terminal
+* Be sure to have gulp-cli installed on your computer https://gulpjs.com/docs/en/getting-started/quick-start
 * Run ```gulp``` in terminal
 * Create following pages in WordPress admin panel: about, news, projects, services, contact with corresponding templates
 * Install contact-form-7 for the form in contacts page, create new form & edit form id in the contact page short code
@@ -55,3 +56,4 @@
 
 <div class="button__div">[submit "Send"]</div>
 ```
+* Add projects and posts to have them appear on success stories & news pages.
