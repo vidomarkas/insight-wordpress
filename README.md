@@ -18,7 +18,7 @@
 
 * Download & place wordpress folder to (*Wherever you installed XAMPP*)\xampp\htdocs
 ![place wordpress folder](https://user-images.githubusercontent.com/37672494/90953527-1ba6cc00-e464-11ea-9b95-4b2382ab759d.png)
-* Move the downloaded insight-wordpress theme to (*Wherever you installed XAMPP*)\xampp\htdocs\wordpress\wp-content\themes
+* Move the downloaded and unzipped insight-wordpress folder to (*Wherever you installed XAMPP*)\xampp\htdocs\wordpress\wp-content\themes
 ![save theme](https://user-images.githubusercontent.com/37672494/90953536-28c3bb00-e464-11ea-87eb-6efb5c4d93d5.jpg)
 * Run XAMPP as administrator(windows). Start Apache and MySQL
 * Click on MySQL Admin and create database and a user with admin rights
