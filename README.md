@@ -1,7 +1,11 @@
-# Insight - wordpress theme
+# Insight - wordpress
 [PHP, JavaScript, HTML5, CSS3, SASS] Custom marketing agency website built on Wordpress CMS
 
-## To develop this theme on your local machine:
+## To develop this website on your local machine:
+
+## Download theme code
+![download_github](https://user-images.githubusercontent.com/37672494/90953514-fade7680-e463-11ea-8581-e7a255b7c3e6.png)
+
 
 ## Requirements:
 * XAMPP https://www.apachefriends.org/index.html
@@ -13,15 +17,20 @@
 ## How to use:
 
 * Download & place wordpress folder to (*Wherever you installed XAMPP*)\xampp\htdocs
+![place wordpress folder](https://user-images.githubusercontent.com/37672494/90953527-1ba6cc00-e464-11ea-9b95-4b2382ab759d.png)
 * Move the downloaded insight-wordpress theme to (*Wherever you installed XAMPP*)\xampp\htdocs\wordpress\wp-content\themes
+![save theme](https://user-images.githubusercontent.com/37672494/90953536-28c3bb00-e464-11ea-87eb-6efb5c4d93d5.jpg)
 * Run XAMPP as administrator(windows). Start Apache and MySQL
 * Click on MySQL Admin and create database and a user with admin rights
 * In your browser go to localhost/wordpress and install wordpress with your previously set credentials
 * Once installed change active theme to insight
 * Open the insight theme directory (for example C:\xampp\htdocs\wordpress\wp-content\themes\insight) with code editor
 * Run ```npm install``` in terminal (You need to have node installed on ypur machine for this)
+![npm_install](https://user-images.githubusercontent.com/37672494/90953560-32e5b980-e464-11ea-86d6-53448a5bd5b8.jpg)
 * Run ```gulp``` in terminal
 * Create following pages in WordPress admin panel: about, news, projects, services, contact choosing the corresponding templates from the menu (you may want to have classic editor plugin installed)
+![img1](https://user-images.githubusercontent.com/37672494/90953566-44c75c80-e464-11ea-8948-f456ba1cad63.jpg)
+
 * Install contact-form-7 plugin
 * In code-form-7 create new form, paste following code
 
