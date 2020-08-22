@@ -12,13 +12,17 @@
 
 ## How to use:
 
-* Download & place WordPress folder to (*Wherever you installed XAMPP*)\xampp\htdocs
+* Download & place wordpress folder to (*Wherever you installed XAMPP*)\xampp\htdocs
 * Move the downloaded insight-wordpress theme to (*Wherever you installed XAMPP*)\xampp\htdocs\wordpress\wp-content\themes
-* Run XAMPP as administrator(windows). Run Apache and MySQL
-* Run ```npm install``` in terminal
+* Run XAMPP as administrator(windows). Start Apache and MySQL
+* Click on MySQL Admin and create database and a user with admin rights
+* In your browser go to localhost/wordpress and install wordpress with your previously set credentials
+* Once installed change active theme to insight
+* Open the insight theme directory (for example C:\xampp\htdocs\wordpress\wp-content\themes\insight) with code editor
+* Run ```npm install``` in terminal (You need to have node installed on ypur machine for this)
 * Run ```gulp``` in terminal
-* Create following pages in WordPress admin panel: about, news, projects, services, contact with corresponding templates
-* Install contact-form-7 for the form in contacts page, create new form & edit form id in the contact page short code
+* Create following pages in WordPress admin panel: about, news, projects, services, contact choosing the corresponding templates from the menu (you may want to have classic editor plugin installed)
+* Install contact-form-7 plugin
 * In code-form-7 create new form, paste following code
 
 ```
@@ -63,4 +67,22 @@
 
 <div class="button__div">[submit "Send"]</div>
 ```
+Edit form id in the contact page short code
+and create another form for signing up:
+```
+[text* first-name placeholder "First name" ]
+[text* last-name placeholder "Last name" ]
+[email* email-address placeholder "Email address*" ]
+
+Insight needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at anytime. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, check out our Privacy Policy.
+In order to provide you the content requested, we need to store and process your personal data. If you consent to us storing your personal data for this purpose, please tick the checkbox below.
+
+[checkbox* checkbox-613 "I agree to receive other communications from Insight"]
+
+<div class="button__div">[submit "Subscribe"]</div>
+```
+Be sure to change the corresponding short code in email-popup.php file
+
 * Add projects and posts to have them appear on success stories & news pages.
+* Gulp will auto convert *.scss files to *.css, watch for changes in your code and auto reload the browser window
+* Enjoy the development!
