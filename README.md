@@ -1,14 +1,21 @@
 # Insight - wordpress theme
 [PHP, JavaScript, HTML5, CSS3, SASS] Custom marketing agency website built on Wordpress CMS
 
+## To develop this theme on your local machine:
+
+## Requirements:
+* XAMPP https://www.apachefriends.org/index.html
+* WordPress install from https://wordpress.org/download/
+* NodeJS for downloading npm packages https://nodejs.org/en/
+* WordPress https://wordpress.org/download/
+* Gulp-cli https://gulpjs.com/docs/en/getting-started/quick-start
+
 ## How to use:
 
-* Install & Run XAMPP https://www.apachefriends.org/index.html
-* Download latest WordPress install from https://wordpress.org/download/
-* Place WordPress install in the C:\xampp\htdocs
-* Move the downloaded insight-wordpress theme to C:\xampp\htdocs\wordpress\wp-content\themes
+* Download & place WordPress folder to (*Wherever you installed XAMPP*)\xampp\htdocs
+* Move the downloaded insight-wordpress theme to (*Wherever you installed XAMPP*)\xampp\htdocs\wordpress\wp-content\themes
+* Run XAMPP as administrator(windows). Run Apache and MySQL
 * Run ```npm install``` in terminal
-* Be sure to have gulp-cli installed on your computer https://gulpjs.com/docs/en/getting-started/quick-start
 * Run ```gulp``` in terminal
 * Create following pages in WordPress admin panel: about, news, projects, services, contact with corresponding templates
 * Install contact-form-7 for the form in contacts page, create new form & edit form id in the contact page short code
